@@ -31,9 +31,9 @@ Each row contains for a  subject and activity 79 averaged signal measurements.
 ### Average of measurements
 
 All measurements are floating-point values, normalised and bounded within [-1,1]. Prior to normalisation, acceleration 
-measurements (variables containing `Accelerometer`) were made in *g*'s (9.81 m.s⁻²) and gyroscope measurements 
-(variables containing `Gyroscope`) were made in radians per second (rad.s⁻¹). Magnitudes of three-dimensional signals 
-(variables containing `Magnitude`) were calculated using the Euclidean norm.
+measurements (variables containing *Accelerometer*) were made in *g*'s (9.81 m.s⁻²) and gyroscope measurements 
+(variables containing *Gyroscope*) were made in radians per second (rad.s⁻¹). Magnitudes of three-dimensional signals 
+(variables containing *Magnitude*) were calculated using the Euclidean norm.
 
 The measurements are classified in two domains:
 
@@ -219,7 +219,7 @@ The initial dataset was transformed by the next operations:
 were selected for each measurement.
 3. The activity identifiers coded as integers from 1 to 6 were replaced with the activity names.
 4. The variable names were replaced with understandable variable names by the next rules:
-	- mean and mean() -> Mean, std() -> StandartDeviation, Acc -> Acceleration, Mag -> Magnitude, Freq() - > Frequency, Gyro -> Gyroscope
+	- *mean* and *mean()* -> *Mean*, *std()* -> *StandartDeviation*, *Acc* -> *Acceleration*, *Mag* -> *Magnitude*, *Freq()* - > *Frequency*, *Gyro* -> *Gyroscope*
 	- The initial *f* and *t* were replaced by *frequency* and *time* respectively.
 	- Special character - was removed
 	- Typos *BodyBody* were replaced with *Body*.
